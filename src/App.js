@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import firebase from "firebase";
 
 // Your web app's Firebase configuration
