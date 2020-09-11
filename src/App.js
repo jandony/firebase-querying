@@ -278,18 +278,12 @@ function App() {
               >
                 <TableCell>{recipe.name}</TableCell>
                 <TableCell className={classes.ingredients}>
-                  {recipe.ingredients.map((ing) => {
-                    return `${ing}, `;
-                  })}
+                  {recipe.ingredients.join(", ")}
                 </TableCell>
                 <TableCell className={classes.directions}>
                   {recipe.directions}
                 </TableCell>
-                <TableCell>
-                  {recipe.categories.map((cat) => {
-                    return `${cat}, `;
-                  })}
-                </TableCell>
+                <TableCell>{recipe.categories.join(", ")}</TableCell>
               </TableRow>
             ))}
           </TableBody>
